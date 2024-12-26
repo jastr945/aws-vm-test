@@ -1,6 +1,6 @@
 variables {
-  sg = "sg-0123456789"
-  subnet = "subnet-0123456789"
+  sg = "sg-03de4eeba95bdda4f"
+  subnet = "subnet-0d607a3bfa7b03154"
 }
 
 run "valid_ec2_id" {
