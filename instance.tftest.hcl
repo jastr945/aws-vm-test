@@ -20,3 +20,13 @@ run "valid_ec2_arn" {
   }
 
 }
+
+
+run "valid_ec2_public_ip" {
+
+  assert {
+    condition     = length(aws_instance.basic.public_ip) <= 15
+    error_message = "EC2 instance public IP address couldn't be assigned"
+  }
+
+}
